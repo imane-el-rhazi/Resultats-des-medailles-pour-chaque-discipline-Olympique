@@ -8,7 +8,8 @@ Ce module met l'accent sur les méthodes de visualisation des données, la conce
 
 Imane EL RHAZI : imane0037@gmail.com  /
 Zainab SENHAJI MIMIDI: zainab.senhaji.mimidi@gmail.com  /
-Oussama EL AISSAOUI : 
+Oussama EL AISSAOUI : El.aissaoui.oussama@outlook.com
+
 
 # Projet : D-tection-des-fraudes-des-paiements-en-ligne
 L'objectif de notre projet est de détecter les fraudes dans les paiements en ligne en se basant sur :
