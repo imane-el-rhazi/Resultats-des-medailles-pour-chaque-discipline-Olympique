@@ -21,5 +21,9 @@ Première Séance :Lors de la première séance, plusieurs pages HTML ont été 
 
 Deuxième Séance : La deuxième séance s’est concentrée sur des visualisations plus interactives.En utilise Voyant Tools pour analyser un texte et afficher les résultats sous forme de graphiques et de nuages de mots, mettant en évidence les termes les plus récurrents. 
 
-# Contribution
-Pour toute suggestion ou contribution, merci de contacter l’un des membres du groupe.
+# Les liens de notre réalisation : Visualisation 
+1 /  
+2 /
+3 /  https://imane-el-rhazi.github.io/D-tection-des-fraudes-des-paiements-en-ligne-/third.html
+
+
