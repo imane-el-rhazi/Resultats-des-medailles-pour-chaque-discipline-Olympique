@@ -24,7 +24,7 @@ Deuxième Séance : La deuxième séance s’est concentrée sur des visualisati
 
 # Les liens de notre réalisation : Visualisation 
 1 /  
-2 /   https://imane-el-rhazi.github.io/D-tection-des-fraudes-des-paiements-en-ligne-/second.html
+2 /   https://imane-el-rhazi.github.io/D-tection-des-fraudes-des-paiements-en-ligne-/second.html  
 3 /  https://imane-el-rhazi.github.io/D-tection-des-fraudes-des-paiements-en-ligne-/third.html
 
 
