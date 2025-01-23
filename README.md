@@ -6,8 +6,8 @@ Ce module met l'accent sur les méthodes de visualisation des données, la conce
 
 # Groupe de Travail
 
-Imane EL RHAZI : imane0037@gmail.com
-Zainab SENHAJI MIMIDI: zainab.senhaji.mimidi@gmail.com
+Imane EL RHAZI : imane0037@gmail.com  /
+Zainab SENHAJI MIMIDI: zainab.senhaji.mimidi@gmail.com  /
 Oussama EL AISSAOUI : 
 
 # Projet : D-tection-des-fraudes-des-paiements-en-ligne
