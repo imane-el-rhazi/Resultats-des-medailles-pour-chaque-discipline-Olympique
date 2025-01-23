@@ -14,7 +14,8 @@ Oussama EL AISSAOUI : El.aissaoui.oussama@outlook.com
 # Projet : D-tection-des-fraudes-des-paiements-en-ligne
 L'objectif de notre projet est de détecter les fraudes dans les paiements en ligne en se basant sur :
 
--le montant de transactions fait /le type de transaction effectuée.
+-le montant de transactions fait   
+-le type de transaction effectuée.
 
 # Détails des Séances
 Première Séance :Lors de la première séance, plusieurs pages HTML ont été créées pour explorer et visualiser des données issues de Wikidata Query Service. La page s01e01.html affiche la requête "la classe - wd_peintres" sous deux formats : un graphique généré avec l’outil en ligne RAWGraphs et un tableau CSV pour une meilleure lisibilité des données brutes. Une autre page, AffichagefichierCSV.html, permet de charger et de visualiser directement le contenu d’un fichier CSV sous forme de tableau HTML. 
