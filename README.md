@@ -45,6 +45,9 @@ Cliquez ici pour voir la visualisation 2 :
     
 3/ Pour la partie « téléchargement de fichier CSV », il suffit de sélectionner le fichier CSV souhaité, puis de cliquer sur le bouton « Charger le CSV ». Selon la taille du fichier, le chargement peut prendre environ 10 secondes, après quoi les informations contenues dans le fichier s’affichent automatiquement.
 
+# Les sources d’information :
+👉  data.gouv.fr : https://www.data.gouv.fr/fr/datasets/paris-2024-resultats-des-medailles-pour-chaque-discipline-olympique/                               
+👉 Datawrapper :  https://datawrapper.dwcdn.net/i4siz/1/
 
 
 
