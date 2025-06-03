@@ -24,7 +24,7 @@ Cette page constitue une plateforme interactive permettant d’analyser et de vi
 ## 🔗 Visualisation interactive
 
 Cliquez ici pour télecharger les deux fichier csv pour tester : 
-👉 [Télecharger fichier paris-2024-results-medals-oly-eng.csv ](https://imane-el-rhazi.github.io/Resultats-des-medailles-pour-chaque-discipline-Olympique/paris-2024-results-medals-oly-eng.csv)
+👉 [Télecharger fichier paris-2024-results-medals-oly-eng.csv ](https://imane-el-rhazi.github.io/Resultats-des-medailles-pour-chaque-discipline-Olympique/paris-2024-results-medals-oly-eng.csv)                
 👉 Télecharger fichier paris2024-athletes.csv](https://imane-el-rhazi.github.io/Resultats-des-medailles-pour-chaque-discipline-Olympique/paris2024-athletes.csv)
 
 Cliquez ici pour voir la visualisation 1 :  
