@@ -46,8 +46,13 @@ Cliquez ici pour voir la visualisation 2 :
 3/ Pour la partie « téléchargement de fichier CSV », il suffit de sélectionner le fichier CSV souhaité, puis de cliquer sur le bouton « Charger le CSV ». Selon la taille du fichier, le chargement peut prendre environ 10 secondes, après quoi les informations contenues dans le fichier s’affichent automatiquement.
 
 # Les sources d’information :
+
+Dans le cadre de ce projet, les données ont été récupérées à partir du site data.gouv.fr, une plateforme officielle qui fournit des jeux de données ouverts et accessibles au public. Nous avons importé les fichiers au format CSV pour exploiter les informations nécessaires à notre analyse. Pour représenter les données structurées, nous avons utilisé l’outil Datawrapper, qui facilite la création de graphiques clairs et interactifs. En parallèle, nous avons développé d’autres visualisations personnalisées en HTML et JavaScript, en intégrant des bibliothèques comme chart afin de générer des graphiques dynamiques directement dans la page web. Cette combinaison d’outils nous a permis de rendre les données plus compréhensibles et attrayantes pour les utilisateurs.
+
 👉  data.gouv.fr : https://www.data.gouv.fr/fr/datasets/paris-2024-resultats-des-medailles-pour-chaque-discipline-olympique/                               
-👉 Datawrapper :  https://datawrapper.dwcdn.net/i4siz/1/
+👉 Datawrapper :  https://datawrapper.dwcdn.net/i4siz/1/                                    
+👉 graphique code : https://louisbigo.com/L2SOQ/2021/chartjs.html
+
 
 
 
