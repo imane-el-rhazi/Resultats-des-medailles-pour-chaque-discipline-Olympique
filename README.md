@@ -54,8 +54,8 @@ Dans le cadre de ce projet, les données ont été récupérées à partir du si
 👉 Datawrapper :  https://datawrapper.dwcdn.net/i4siz/1/                                    
 👉 graphique code : https://louisbigo.com/L2SOQ/2021/chartjs.html
 
-Pour l'explication des graphes voila un fichier world explique chaque graphe                         
-👉 [Télecharger le fichier world](https://imane-el-rhazi.github.io/Resultats-des-medailles-pour-chaque-discipline-Olympique/EXPLICATIONDESGRAPHESDEPREMIEREVISUALISATION.docx)
+Pour l'explication des graphes voila un fichier world explique chaque graphe il est télacharger en repos selon le nom  "EXPLICATION DES GRAPHES DE PREMIERE VISUALISATION.docx "                   
+
 
 
 
