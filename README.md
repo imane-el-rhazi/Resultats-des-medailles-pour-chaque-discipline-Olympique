@@ -28,7 +28,8 @@ Cliquez ici pour télecharger les deux fichier csv pour tester :
 👉 Télecharger fichier paris2024-athletes.csv](https://imane-el-rhazi.github.io/Resultats-des-medailles-pour-chaque-discipline-Olympique/paris2024-athletes.csv)
 
 Cliquez ici pour voir la visualisation 1 :  
-👉 [Voir la visualisation](https://imane-el-rhazi.github.io/Resultats-des-medailles-pour-chaque-discipline-Olympique/Visualisation1.html)
+👉 [Voir la visualisation](https://imane-el-rhazi.github.io/Resultats-des-medailles-pour-chaque-discipline-Olympique/Visualisation1.html)              
+     PS : POUR LE DEUXIÈME GRAPHE AFFICHANT LES MÉDAILLES PAR PAYS, VOUS POUVEZ CLIQUER SUR LES BARRES AFIN DE VOIR PLUS CLAIREMENT LE NOM COMPLET DE CHAQUE PAYS MENTIONNÉ.
 
 
 # VISUALISATION 2 :
