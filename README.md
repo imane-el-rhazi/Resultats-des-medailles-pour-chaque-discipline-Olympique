@@ -41,7 +41,6 @@ Cliquez ici pour voir la visualisation 2 :
 1/ Pour le tableau des données structurées ça prend environs 2 seconds 3 seconds pour s'afficher                                          
 2/ Pour la partie des données non structurées  voici le texte pour tester il faut le coller sur la rebruque "collez votre texte ici " et appuyer sur "Make it Rain!"
     👉 [Voici le texte pour tester](https://imane-el-rhazi.github.io/Resultats-des-medailles-pour-chaque-discipline-Olympique/nonStructuré.txt)                            
-
 3/ Pour la partie « téléchargement de fichier CSV », il suffit de sélectionner le fichier CSV souhaité, puis de cliquer sur le bouton « Charger le CSV ». Selon la taille du fichier, le chargement peut prendre environ 10 secondes, après quoi les informations contenues dans le fichier s’affichent automatiquement.
 
 
