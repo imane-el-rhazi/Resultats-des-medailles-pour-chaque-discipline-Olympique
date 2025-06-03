@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Visualisations JO 2024 (Futur 2030)</title>
+
+  <!-- Google Fonts : Orbitron pour titres, Roboto pour texte -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+
+  <!-- Feuille de style futuriste 2030 (glassmorphism, néons, etc.) -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Chart.js + Plugin DataLabels -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2"></script>
+  <!-- PapaParse pour lire les CSV -->
+  <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+  <!-- Leaflet.js pour la carte -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+</head>
+<body>
+  <!-- Header fixe avec titre (ancienne mise en forme) -->
+  <header class="navbar">
+    <div class="logo">JO2024</div>
+  </header>
+
+  <!-- Conteneur principal aligné comme avant -->
+  <main class="container">
+    <!-- Section Upload (ancienne structure, styled by futurist theme) -->
+    <section class="upload-card">
+      <h2>Chargement de données</h2>
+      <div class="upload-group">
+        <label for="uploadAthletes">📂 Fichier Athlètes (CSV)</label>
+        <input type="file" id="uploadAthletes" accept=".csv">
+      </div>
+      <div class="upload-group">
+        <label for="uploadMedals">📂 Fichier Médailles (CSV)</label>
+        <input type="file" id="uploadMedals" accept=".csv">
+      </div>
+    </section>
+
+    <!-- Grille de visualisations (ancienne structure) -->
+    <section class="grid-visual">
+      <div class="viz-card">
+        <h3>Répartition des médailles par discipline</h3>
+        <canvas id="chartDiscipline"></canvas>
+      </div>
+      <div class="viz-card">
+        <h3>Répartition des médailles par pays</h3>
+        <canvas id="chartCountry"></canvas>
+      </div>
+      <div class="viz-card">
+        <h3>Médailles par type (Or / Argent / Bronze)</h3>
+        <canvas id="chartType"></canvas>
+      </div>
+      <div class="viz-card">
+        <h3>Évolution des médailles par date</h3>
+        <canvas id="chartDate"></canvas>
+      </div>
+      <div class="viz-card">
+        <h3>Médailles gagnées par la France</h3>
+        <canvas id="chartFrance"></canvas>
+      </div>
+      <div class="viz-card">
+        <h3>Répartition des médailles par genre</h3>
+        <canvas id="chartGender"></canvas>
+      </div>
+      <div class="viz-card">
+        <h3>Répartition par tranche d'âge</h3>
+        <canvas id="chartAge"></canvas>
+      </div>
+      <div class="viz-card">
+        <h3>Carte des sites de compétition</h3>
+        <div id="map" class="map-glass"></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Script JavaScript inchangé -->
+  <script src="script.js"></script>
+</body>
+</html>

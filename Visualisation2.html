@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Visualisation des données structurées + Pluie de mots</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Import PapaParse (même si tu ne l’utilises pas dans cette version, je le laisse au cas où) -->
+  <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    h1, h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      font-family: Arial, sans-serif;
+    }
+    section {
+      margin-bottom: 40px;
+    }
+
+    /* Conteneur général pour centrer et limiter la largeur */
+    #csvTableContainer {
+      width: 100%;
+      max-width: 900px;
+      margin: 20px auto;
+      overflow-x: auto; /* scroll horizontal sur mobile */
+      background-color: #fff;
+      border-radius: 6px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      padding: 10px;
+    }
+
+    /* Style du tableau */
+    #csvTableContainer table {
+      width: 100%;
+      border-collapse: collapse;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      color: #333;
+    }
+
+    /* En-têtes */
+    #csvTableContainer th {
+      background-color: #f0f0f0;
+      color: #222;
+      font-weight: 600;
+      text-align: left;
+      padding: 10px 12px;
+      border-bottom: 2px solid #ddd;
+    }
+
+    /* Cellules de données */
+    #csvTableContainer td {
+      padding: 8px 12px;
+      border-bottom: 1px solid #e0e0e0;
+    }
+
+    /* Lignes paires */
+    #csvTableContainer tr:nth-child(even) {
+      background-color: #fafafa;
+    }
+
+    /* Effet au survol */
+    #csvTableContainer tr:hover {
+      background-color: #f5faff;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      #csvTableContainer th,
+      #csvTableContainer td {
+        padding: 6px 8px;
+        font-size: 12px;
+      }
+    }
+
+    /* Iframe container */
+    .iframe-container {
+      width: 100%;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+
+    /* Styles pour la section pluie de mots */
+    #rainSection {
+      width: 100%;
+      max-width: 900px;
+      margin: 0 auto 60px auto;
+      background: linear-gradient(to bottom, #87CEFA, #1E90FF);
+      color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      text-align: center;
+    }
+
+    #textInput {
+      width: 80%;
+      height: 100px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      border: none;
+      padding: 10px;
+      font-size: 16px;
+    }
+
+    #startRainBtn {
+      padding: 10px 20px;
+      font-size: 16px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      border: none;
+      background-color: #fff;
+      color: #1E90FF;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    #startRainBtn:hover {
+      background-color: #87CEFA;
+    }
+
+    #rainCanvas {
+      border: 2px solid #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      max-width: 100%;
+      height: 400px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Visualisation des données structurées</h1>
+
+  <section>
+    <h2>Tableau Datawrapper intégré</h2>
+    <div class="iframe-container">
+      <iframe
+        title="Interactive table"
+        aria-label="Datawrapper table"
+        id="datawrapper-chart-i4siz"
+        src="https://datawrapper.dwcdn.net/i4siz/1/"
+        scrolling="no"
+        frameborder="0"
+        style="width: 0; min-width: 100% !important; border: none;">
+      </iframe>
+      <script type="text/javascript">
+        !function(){"use strict";window.addEventListener("message",function(a){
+          if(void 0!==a.data["datawrapper-height"]){
+            for(var e in a.data["datawrapper-height"]){
+              var t=document.getElementById("datawrapper-chart-"+e)
+                    ||document.querySelector("iframe[src*='"+e+"']");
+              t&&(t.style.height=a.data["datawrapper-height"][e]+"px")
+            }
+          }
+        })}();
+      </script>
+    </div>
+  </section>
+
+  <!-- Section pluie de mots -->
+  <section id="rainSection">
+    <h2>Visualisation des données non structurées</h2>
+    <textarea id="textInput" placeholder="Collez votre texte ici"></textarea>
+    <br />
+    <button id="startRainBtn">Make it Rain!</button>
+    <br />
+    <canvas id="rainCanvas" width="800" height="400"></canvas>
+  </section>
+
+  <!-- Nouvelle section ajoutée : upload et affichage CSV -->
+  <section id="csvSection" style="max-width:900px; margin: 0 auto 60px auto; background:#fff; padding:20px; border-radius:10px; box-shadow:0 4px 8px rgba(0,0,0,0.1);">
+    <h2>Télécharger et afficher un fichier CSV</h2>
+    <input type="file" id="csvFileInput" accept=".csv" />
+    <button id="loadCsvBtn" style="margin-left:10px; padding:6px 12px; cursor:pointer;">Charger le CSV</button>
+    <div id="csvTableContainer" style="margin-top:20px; overflow-x:auto;">
+      <!-- Tableau généré ici -->
+    </div>
+  </section>
+
+  <script>
+    // Code pluie de mots (inchangé)
+    const canvas = document.getElementById('rainCanvas');
+    const ctx = canvas.getContext('2d');
+    let raindrops = [];
+    let animationFrame;
+
+    document.getElementById('startRainBtn').addEventListener('click', () => {
+      const text = document.getElementById('textInput').value.trim();
+      if (!text) {
+        alert("Veuillez entrer du texte !");
+        return;
+      }
+      cancelAnimationFrame(animationFrame); // stop animations précédentes
+      raindrops = [];
+      const words = text.split(/\s+/);
+      for (let i = 0; i < words.length; i++) {
+        raindrops.push({
+          x: Math.random() * canvas.width,
+          y: Math.random() * canvas.height,
+          speed: Math.random() * 5 + 2,
+          word: words[i],
+          opacity: Math.random() * 0.5 + 0.5,
+        });
+      }
+      animateRain();
+    });
+
+    function animateRain() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      ctx.font = '20px Arial';
+      raindrops.forEach(drop => {
+        ctx.fillStyle = `rgba(255, 255, 255, ${drop.opacity})`;
+        ctx.fillText(drop.word, drop.x, drop.y);
+        drop.y += drop.speed;
+        if (drop.y > canvas.height) {
+          drop.y = 0;
+          drop.x = Math.random() * canvas.width;
+        }
+      });
+      animationFrame = requestAnimationFrame(animateRain);
+    }
+
+    // Nouveau code pour le chargement et affichage CSV
+    document.getElementById('loadCsvBtn').addEventListener('click', () => {
+      const input = document.getElementById('csvFileInput');
+      const container = document.getElementById('csvTableContainer');
+      container.innerHTML = ''; // reset display
+      if (!input.files.length) {
+        alert('Veuillez sélectionner un fichier CSV');
+        return;
+      }
+      const file = input.files[0];
+
+      Papa.parse(file, {
+        header: true,
+        skipEmptyLines: true,
+        complete: function(results) {
+          if (results.data.length === 0) {
+            container.innerHTML = '<p>Aucune donnée trouvée dans le fichier.</p>';
+            return;
+          }
+          // Création du tableau HTML
+          const table = document.createElement('table');
+          // En-têtes
+          const thead = document.createElement('thead');
+          const headerRow = document.createElement('tr');
+          Object.keys(results.data[0]).forEach(col => {
+            const th = document.createElement('th');
+            th.textContent = col;
+            headerRow.appendChild(th);
+          });
+          thead.appendChild(headerRow);
+          table.appendChild(thead);
+
+          // Corps du tableau
+          const tbody = document.createElement('tbody');
+          results.data.forEach(row => {
+            const tr = document.createElement('tr');
+            Object.values(row).forEach(cell => {
+              const td = document.createElement('td');
+              td.textContent = cell;
+              tr.appendChild(td);
+            });
+            tbody.appendChild(tr);
+          });
+          table.appendChild(tbody);
+
+          container.appendChild(table);
+        },
+        error: function(err) {
+          container.innerHTML = `<p>Erreur lors du parsing : ${err.message}</p>`;
+        }
+      });
+    });
+  </script>
+</body>
+</html>

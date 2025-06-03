@@ -1,0 +1,57 @@
+/* Styles pour le tableau CSV généré */
+
+/* Conteneur général pour centrer et limiter la largeur */
+#csvTableContainer {
+  width: 100%;
+  max-width: 900px;
+  margin: 20px auto;
+  overflow-x: auto; /* permet le scroll horizontal sur mobile */
+  background-color: #fff;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+}
+
+/* Style du <table> lui-même */
+#csvTableContainer table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: #333;
+}
+
+/* En-têtes */
+#csvTableContainer th {
+  background-color: #f0f0f0;
+  color: #222;
+  font-weight: 600;
+  text-align: left;
+  padding: 10px 12px;
+  border-bottom: 2px solid #ddd;
+}
+
+/* Cellules de données */
+#csvTableContainer td {
+  padding: 8px 12px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+/* Lignes paires pour l’alternance */
+#csvTableContainer tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+/* Effet au survol d’une ligne */
+#csvTableContainer tr:hover {
+  background-color: #f5faff;
+}
+
+/* Responsive : réduire la taille de la police sur petit écran */
+@media (max-width: 600px) {
+  #csvTableContainer th,
+  #csvTableContainer td {
+    padding: 6px 8px;
+    font-size: 12px;
+  }
+}
