@@ -21,7 +21,10 @@ L’objectif de ce projet est de développer une visualisation interactive des J
 
 # VISUALISATION 1 :
 Cette page constitue une plateforme interactive permettant d’analyser et de visualiser la répartition des médailles par discipline olympique,et des données dur les olympiques à l’aide de graphiques et d’une carte combinés.
-- file:///C:/Users/hp/Downloads/Ratt/Visualisation1.html
+## 🔗 Visualisation interactive
+
+[Voir la visualisation des médailles](https://imane-el-rhazi.github.io/Resultats-des-medailles-pour-chaque-discipline-Olympique/Visualisation1.html)
+
 
 # Détails des Séances
 Première Séance :Lors de la première séance, plusieurs pages HTML ont été créées pour explorer et visualiser des données issues de Wikidata Query Service. La page s01e01.html affiche la requête "la classe - wd_peintres" sous deux formats : un graphique généré avec l’outil en ligne RAWGraphs et un tableau CSV pour une meilleure lisibilité des données brutes. Une autre page, AffichagefichierCSV.html, permet de charger et de visualiser directement le contenu d’un fichier CSV sous forme de tableau HTML. 
