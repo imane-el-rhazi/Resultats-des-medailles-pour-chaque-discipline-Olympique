@@ -23,7 +23,7 @@ L’objectif de ce projet est de développer une visualisation interactive des J
 Cette page constitue une plateforme interactive permettant d’analyser et de visualiser la répartition des médailles par discipline olympique,et des données dur les olympiques à l’aide de graphiques et d’une carte combinés.
 ## 🔗 Visualisation interactive
 
-Cliquez ici pour voir la visualisation des médailles par discipline olympique :  
+Cliquez ici pour voir la visualisation 1 :  
 👉 [Voir la visualisation](https://imane-el-rhazi.github.io/Resultats-des-medailles-pour-chaque-discipline-Olympique/Visualisation1.html)
 
 
