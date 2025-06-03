@@ -15,7 +15,7 @@ Oussama EL AISSAOUI : El.aissaoui.oussama@outlook.com
 L’objectif de ce projet est de développer une visualisation interactive des Jeux Olympiques, permettant de :
 
 -Présenter la répartition des médailles par discipline ou par pays.   
--Afficher le nombre de médailles selon leur type (or, argent, bronze). 
+-Afficher le nombre de médailles selon leur type (or, argent, bronze).            
 -Suivre l’évolution des médailles au fil des éditions. 
 -Filtrer et visualiser uniquement les médailles remportées par la France. 
 
