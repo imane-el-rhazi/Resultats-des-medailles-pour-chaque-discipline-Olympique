@@ -11,7 +11,7 @@ Zainab SENHAJI MIMIDI: zainab.senhaji.mimidi@gmail.com
 Oussama EL AISSAOUI : El.aissaoui.oussama@outlook.com
 
 
-# Projet : D-tection-des-fraudes-des-paiements-en-ligne
+# Projet : Résultats des médaillés pour chaque discipline Olympique
 L'objectif de notre projet est de détecter les fraudes dans les paiements en ligne en se basant sur :
 
 -le montant de transactions fait   
