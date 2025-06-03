@@ -32,11 +32,17 @@ Cliquez ici pour voir la visualisation 1 :
 
 
 # VISUALISATION 2 :
-Cette page web est une démonstration bien structurée et visuellement attrayante, qui combine interactivité et contenu informatif. Elle se divise en trois parties principales. La première présente des données structurées à l’aide de l’outil Datawrapper, sous forme de graphiques à barres permettant une lecture claire et comparative des informations. La deuxième partie est consacrée aux données non structurées, représentées visuellement par des mots-clés animés qui tombent à l’écran, offrant une approche plus libre et exploratoire. Enfin, la troisième section permet à l’utilisateur de téléverser un fichier CSV, dont les données sont automatiquement affichées sous forme de tableau pour une consultation simple et rapide.
+Cette page web est une démonstration bien structurée et visuellement attrayante, qui combine interactivité et contenu informatif. Elle se divise en trois parties principales. La première présente des données structurées à l’aide de l’outil Datawrapper, sous forme de graphiques à barres permettant une lecture claire et comparative des informations. La deuxième partie est consacrée aux données non structurées, représentées visuellement par des mots-clés animés qui tombent à l’écran, offrant une approche plus libre et exploratoire. Enfin, la troisième section permet à l’utilisateur de téléverser un fichier CSV, dont les données sont automatiquement affichées sous forme de tableau pour une consultation simple et rapide.       
+
+Cliquez ici pour voir la visualisation 2 :  
+👉 [Voir la visualisation](https://imane-el-rhazi.github.io/Resultats-des-medailles-pour-chaque-discipline-Olympique/Visualisation2.html)
+
 
 1/ Pour le tableau des données structurées ça prend environs 2 seconds 3 seconds pour s'afficher                                          
 2/ Pour la partie des données non structurées  voici le texte pour tester il faut le coller sur la rebruque "collez votre texte ici " et appuyer sur "Make it Rain!"
-    👉 [Voici le texte pour tester](https://imane-el-rhazi.github.io/Resultats-des-medailles-pour-chaque-discipline-Olympique/nonStructuré.txt)
+    👉 [Voici le texte pour tester](https://imane-el-rhazi.github.io/Resultats-des-medailles-pour-chaque-discipline-Olympique/nonStructuré.txt)                            
+
+3/ Pour la partie « téléchargement de fichier CSV », il suffit de sélectionner le fichier CSV souhaité, puis de cliquer sur le bouton « Charger le CSV ». Selon la taille du fichier, le chargement peut prendre environ 10 secondes, après quoi les informations contenues dans le fichier s’affichent automatiquement.
 
 
 
