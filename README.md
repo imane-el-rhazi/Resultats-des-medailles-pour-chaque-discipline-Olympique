@@ -31,12 +31,12 @@ Cliquez ici pour voir la visualisation 1 :
 👉 [Voir la visualisation](https://imane-el-rhazi.github.io/Resultats-des-medailles-pour-chaque-discipline-Olympique/Visualisation1.html)
 
 
+# VISUALISATION 2 :
+Cette page web est une démonstration bien structurée et visuellement attrayante, qui combine interactivité et contenu informatif. Elle se divise en trois parties principales. La première présente des données structurées à l’aide de l’outil Datawrapper, sous forme de graphiques à barres permettant une lecture claire et comparative des informations. La deuxième partie est consacrée aux données non structurées, représentées visuellement par des mots-clés animés qui tombent à l’écran, offrant une approche plus libre et exploratoire. Enfin, la troisième section permet à l’utilisateur de téléverser un fichier CSV, dont les données sont automatiquement affichées sous forme de tableau pour une consultation simple et rapide.
 
 
-# Détails des Séances
-Première Séance :Lors de la première séance, plusieurs pages HTML ont été créées pour explorer et visualiser des données issues de Wikidata Query Service. La page s01e01.html affiche la requête "la classe - wd_peintres" sous deux formats : un graphique généré avec l’outil en ligne RAWGraphs et un tableau CSV pour une meilleure lisibilité des données brutes. Une autre page, AffichagefichierCSV.html, permet de charger et de visualiser directement le contenu d’un fichier CSV sous forme de tableau HTML. 
 
-Deuxième Séance : La deuxième séance s’est concentrée sur des visualisations plus interactives.En utilise Voyant Tools pour analyser un texte et afficher les résultats sous forme de graphiques et de nuages de mots, mettant en évidence les termes les plus récurrents. 
+
 
 
 
